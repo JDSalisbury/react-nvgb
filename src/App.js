@@ -7,34 +7,55 @@ import {
   Link
 } from "react-router-dom";
 import { Home, About } from './screens'
+import ParticlesBg from 'particles-bg'
+import { Gradient } from 'react-gradient';
+
 function App() {
+  const gradients = [
+    ['#d860f0', '#9060f0'],
+    ['#a848a8', '#9030a8'],
+    ['#9048c0', '#6048c0'],
+
+  ];
 
   return (
-    <div >
-      <h1 class='header'>Header</h1>
+    <Gradient
+      gradients={gradients} // required
+      property="background"
+      duration={3000}
+      angle="45deg"
+    >
+      <ParticlesBg type="cobweb" bg={true} />
+
       <Router>
-        <div class="demo" augmented-ui="tl-clip b-clip-x tr-clip exe" >
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-          </nav>
+        <div className="demo" augmented-ui="tl-clip b-clip-x tr-clip exe" >
+          <div>
+
+            <h1 className='header'>Header</h1>
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
-        <div class="content-area" augmented-ui=" tl-clip-x tr-clip-x bl-clip br-clip exe">
+        <div className="content-area" augmented-ui=" tl-clip-x tr-clip-x bl-clip br-clip exe">
 
-          <Switch class='content'>
+          <Switch className='content'>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
           </Switch>
         </div>
       </Router>
-    </div>
+
+
+    </Gradient>
   );
 }
 

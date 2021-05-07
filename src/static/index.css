@@ -14,16 +14,16 @@ code {
     monospace;
 }
 
-h1.header {
+/* h1.header {
   height: 10vh;
-}
+} */
 
 
 
 div.demo {
   display: inline-block;
   width: 90vw;
-  height: 10vh;
+  height: 20vh;
   margin: 10px;
   --aug-border: 5px;
   --aug-inset: 5px;

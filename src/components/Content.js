@@ -2,7 +2,7 @@ import React from 'react';
 import '../static/layout.css'
 function Content(props) {
     return (
-        <div class='content'>{props.children}</div>
+        <div className='content'>{props.children}</div>
     );
 }
 

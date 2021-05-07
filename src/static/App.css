@@ -3,6 +3,11 @@
   padding: 0px !important;
 }
 
+html {
+  background: #000;
+
+}
+
 main {
   align-content: center;
   box-sizing: border-box;
@@ -44,4 +49,9 @@ pre {
 code:before,
 code:after {
   content: '\`';
+}
+
+
+.particles-bg-canvas-self{
+  z-index: 0 !important;
 }
