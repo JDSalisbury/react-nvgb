@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Gradient
-      gradients={gradients} // required
+      gradients={gradients}
       property="background"
       duration={3000}
       angle="45deg"
@@ -28,21 +28,9 @@ function App() {
       <ParticlesBg type="cobweb" bg={true} />
 
       <Router>
-        <div className="demo" augmented-ui="tl-clip b-clip-x tr-clip exe" >
-          <div>
-
-            <h1 className='header'>Header</h1>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+        <div className="header-nav" augmented-ui="tl-clip b-clip-x tr-clip exe" >
+          <h1 className='header'>Header</h1>
+          <Link to="/">Home</Link> | <Link to="/about">About</Link>
         </div>
 
         <div className="content-area" augmented-ui=" tl-clip-x tr-clip-x bl-clip br-clip exe">
