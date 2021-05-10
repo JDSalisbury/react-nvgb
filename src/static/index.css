@@ -22,7 +22,7 @@ code {
 
 div.header-nav {
   display: inline-block;
-  width: 90vw;
+  width: 95vw;
   height: 20vh;
   margin: 10px;
   --aug-border: 5px;
@@ -37,7 +37,7 @@ div.header-nav {
 
 div.content-area {
   display: inline-block;
-  width: 90vw;
+  width: 95vw;
   height: 80vh;
   margin: 10px;
   --aug-border: 5px;
