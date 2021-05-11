@@ -19,3 +19,6 @@ To get started with React, along with [Serverless Functions](https://vercel.com/
 ```shell
 $ npx create-react-app my-app
 ```
+
+
+https://github.com/JDSalisbury/practice-app/blob/master/src/redux/actions/service.js
