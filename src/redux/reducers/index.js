@@ -1,3 +1,7 @@
 import { combineReducers } from "redux"
-const rootReducer = combineReducers({})
+import blogs from "./blogs.reducer"
+
+
+const rootReducer = combineReducers({ blogs })
+
 export default rootReducer
